@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#2a1b12">
+<title>布布奶茶铺 · 叠叠乐</title>
+<link rel="stylesheet" href="app.css?v=20261031c">
+</head>
+<body>
+<div id="viewport">
+  <div id="stage">
+    <canvas id="cv"></canvas>
+
+    <div id="hud">
+      <div id="topbar">
+        <div class="pill coinpill"><i class="coin"></i><b id="coinVal">0</b></div>
+        <div class="pill daypill" id="dayPill">第1天 · 0/5</div>
+        <div class="pill rankpill">
+          <span class="rlv" id="rankLv">1</span>
+          <i class="xpb"><i id="xpFill"></i></i>
+        </div>
+        <button class="icbtn" id="btnSave" aria-label="进度存档"></button>
+        <button class="icbtn" id="btnSound" aria-label="声音"></button>
+      </div>
+
+      <div id="orders"></div>
+
+      <div id="bottom">
+        <div class="menu">
+          <div class="tabs" id="tabs"></div>
+          <div class="tiers" id="tiers"></div>
+        </div>
+        <div class="tools" id="tools"></div>
+      </div>
+    </div>
+
+    <div id="tip" class="tip"><span></span><b>知道了</b></div>
+    <div id="nostore"><b>本机存不了进度</b><span>浏览器禁用了本地存储，点这里复制存档码带走</span></div>
+    <div id="toast" class="toast"></div>
+    <div id="fx" class="fx"></div>
+    <div id="modal" class="modal"><div id="modalBody" class="modalBody"></div></div>
+  </div>
+</div>
+
+<div id="rotate">
+  <div class="rotIcon"></div>
+  <b>请竖屏游玩</b>
+  <span>把手机竖过来，桌面才好玩</span>
+</div>
+
+<script src="js/compat.js?v=20261031c"></script>
+<script src="js/config.js?v=20261031c"></script>
+<script src="js/art.js?v=20261031c"></script>
+<script src="js/audio.js?v=20261031c"></script>
+<script src="js/game.js?v=20261031c"></script>
+<script src="js/ui.js?v=20261031c"></script>
+</body>
+</html>
